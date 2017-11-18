@@ -1,0 +1,70 @@
+<!-- 
+Student Name: Shantan Reddy Kothapalli
+First Name: Shantan
+Middle Name: Reddy
+Last Name: Kothapalli
+
+UTA ID: 1001405517
+
+Project Name: Web Mashup: Display House Address on a Map with Weather details
+Project No.2
+Due Date: Wednesday Oct 26th 2016
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display Address with Weather Details</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="webmash.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADSTo-VR_mVvWPTHZldC_331Kg3i5IZHY" type="text/javascript"></script>			<!--Google map key-->
+	<style>
+	body{
+	margin:0;
+	padding:0;
+	background:#C5CAE9;
+	}
+	#head{
+	position:relative;
+	top:-21px;
+	background:#3F51B5;
+	color:#ffffff;
+	}
+	#main{
+	position:relative;
+	top:-30px;
+	background:#C5CAE9;
+	font-size:18px;
+	}
+	#delete:hover{
+	color:white;
+	background:#FF4081;
+	}
+	#map{
+	position:relative;
+	top:10px;
+	margin-left:5px;
+	}
+	#output{
+	background:#3F51B5;
+	color:#ffffff;
+	position:relative;
+	top:-5px;
+	margin:0;
+	}
+	#clear{
+	margin-left:5px;
+	}
+	</style>
+  </head>
+  <body onload="initMap();">
+  <div id="head">
+  <h1>Web Mashup: Display House Address on a Map with Weather details</h1>
+  </div>
+  <div id="main">
+    <div id="clear"><input type="button" value="Clear" id="delete" onclick="clearAll();"></div>					<!--clear text button-->
+    <div id="map" style="width: 600px; height: 500px;"></div><br/>		<!--map area-->
+    <div id="output">&nbsp;</div>															<!--text area-->
+  </div>
+  </body>
+</html>
+
